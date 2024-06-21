@@ -1,18 +1,18 @@
-directory;file_name;variable_name;variable_type;description
-data;boreholefuncmwi.rda;id;integer;Identification number of the observation
-data;boreholefuncmwi.rda;date;date ;Date the survey was filled out
-data;boreholefuncmwi.rda;role;character;Main role of the respondent
-data;boreholefuncmwi.rda;committee_members;integer;How many people are on the Hand pump borehole Committee?
-data;boreholefuncmwi.rda;last_meeting_participants;integer;About how many community members attended the last meeting? (99 is don’t know)
-data;boreholefuncmwi.rda;annual_budget;integer;How much money do you need to manage this borehole without financial problems annually?
-data;boreholefuncmwi.rda;village;categorical;Name of the village
-data;boreholefuncmwi.rda;number_households;integer;How many households use this hand pump borehole?
-data;boreholefuncmwi.rda;tariff_costs_consider;categorical;What costs were considered when setting the tariff or user fee?
-data;boreholefuncmwi.rda;tariff_frequency;categorical;How often is the tariff/user fee collected?
-data;boreholefuncmwi.rda;tariff_amount;integer;How much is the tariff/user fee (in Kwacha)?
-data;boreholefuncmwi.rda;total_money;integer;How much do you source to support operations and maintenance annually?
-data;boreholefuncmwi.rda;tariff_hh_number;integer;How many households in the community paid a water fee the last time it was collected?
-data;boreholefuncmwi.rda;distance_materials;categorical;How far away are/were the materials you use for hand pump borehole repairs?
-data;boreholefuncmwi.rda;service_provider;categorical;Is there a service provider or someone responsible for operating and/or maintaining this hand pump borehole or water system?
-data;boreholefuncmwi.rda;preventive_maintenance;categorical;Do you conduct preventive maintenance?
-data;boreholefuncmwi.rda;functional_status;categorical;Functional status of the borehole
+directory,file_name,variable_name,variable_type,description
+data,boreholefuncmwi.rda,id,integer,Identification number of the observation
+data,boreholefuncmwi.rda,date,date ,Date the survey was filled out
+data,boreholefuncmwi.rda,role,character,Main role of the respondent
+data,boreholefuncmwi.rda,committee_members,integer,How many people are on the Hand pump borehole Committee?
+data,boreholefuncmwi.rda,last_meeting_participants,integer,About how many community members attended the last meeting? (99 is don?t know)
+data,boreholefuncmwi.rda,annual_budget,integer,How much money do you need to manage this borehole without financial problems annually?
+data,boreholefuncmwi.rda,village,categorical,Name of the village
+data,boreholefuncmwi.rda,number_households,integer,How many households use this hand pump borehole?
+data,boreholefuncmwi.rda,tariff_costs_consider,categorical,What costs were considered when setting the tariff or user fee?
+data,boreholefuncmwi.rda,tariff_frequency,categorical,How often is the tariff/user fee collected?
+data,boreholefuncmwi.rda,tariff_amount,integer,How much is the tariff/user fee (in Kwacha)?
+data,boreholefuncmwi.rda,total_money,integer,How much do you source to support operations and maintenance annually?
+data,boreholefuncmwi.rda,tariff_hh_number,integer,How many households in the community paid a water fee the last time it was collected?
+data,boreholefuncmwi.rda,distance_materials,categorical,How far away are/were the materials you use for hand pump borehole repairs?
+data,boreholefuncmwi.rda,service_provider,categorical,Is there a service provider or someone responsible for operating and/or maintaining this hand pump borehole or water system?
+data,boreholefuncmwi.rda,preventive_maintenance,categorical,Do you conduct preventive maintenance?
+data,boreholefuncmwi.rda,functional_status,categorical,Functional status of the borehole
