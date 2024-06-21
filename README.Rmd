@@ -1,0 +1,162 @@
+---
+output: github_document
+always_allow_html: true
+editor_options: 
+  markdown: 
+    wrap: 72
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%",
+  message = FALSE,
+  warning = FALSE,
+  fig.retina = 2,
+  fig.align = 'center'
+)
+```
+
+# boreholefuncmwi
+
+<!-- badges: start -->
+
+[![License: CC BY
+4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgreen.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+<!-- badges: end -->
+
+The goal of boreholefuncmwi is to ...
+
+## Installation
+
+You can install the development version of boreholefuncmwi from
+[GitHub](https://github.com/) with:
+
+``` r
+# install.packages("devtools")
+devtools::install_github("openwashdata/boreholefuncmwi")
+```
+
+```{r}
+## Run the following code in console if you don't have the packages
+## install.packages(c("dplyr", "knitr", "readr", "stringr", "gt", "kableExtra"))
+library(dplyr)
+library(knitr)
+library(readr)
+library(stringr)
+library(gt)
+library(kableExtra)
+```
+
+Alternatively, you can download the individual datasets as a CSV or XLSX
+file from the table below.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+
+extdata_path <- "https://github.com/openwashdata/boreholefuncmwi/raw/main/inst/extdata/"
+
+read_csv("data-raw/dictionary.csv") |> 
+  distinct(file_name) |> 
+  dplyr::mutate(file_name = str_remove(file_name, ".rda")) |> 
+  dplyr::rename(dataset = file_name) |> 
+  mutate(
+    CSV = paste0("[Download CSV](", extdata_path, dataset, ".csv)"),
+    XLSX = paste0("[Download XLSX](", extdata_path, dataset, ".xlsx)")
+  ) |> 
+  knitr::kable()
+
+```
+
+## Data
+
+The package provides access to data which were collected in the Karonga district (North of Malawi) and contains answers from a 20-minute questionnaire about boreholes. The questionnaire was installed on koboTooolbox (www.kobotoolbox.org) to collect borehole functionality data from 300 respondents aged 18 and above.
+
+
+```{r}
+library(boreholefuncmwi)
+```
+
+### boreholefuncmwi
+
+The dataset `boreholefuncmwi` contains data about borehole's management in the North of Malawi. Questions included in the questionnaire are for example about the borehole maintenance contributions from the community, the availability of borehole spare parts, tariff collection frequency and presence of a service provider.
+It has `r nrow(boreholefuncmwi)` observations and `r ncol(boreholefuncmwi)` variables.
+
+```{r}
+boreholefuncmwi |> 
+  head(3) |> 
+  gt::gt() |>
+  gt::as_raw_html()
+```
+
+For an overview of the variable names, see the following table.
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+readr::read_csv("data-raw/dictionary.csv") |>
+  dplyr::filter(file_name == "boreholefuncmwi.rda") |>
+  dplyr::select(variable_name:description) |> 
+  knitr::kable() |> 
+  kableExtra::kable_styling("striped") |> 
+  kableExtra::scroll_box(height = "200px")
+```
+
+
+## Example
+It can be interesting to analyse the numbers of households who draw water from a borehole in each village. Here is a plot showing the distribution of boreholes' use across villages.
+```{r}
+library(boreholefuncmwi)
+library(unhcrthemes)
+library(ggplot2)
+borehole_user <- boreholefuncmwi %>%
+  group_by(village) %>%
+  summarise(number_households = sum(number_households, na.rm = TRUE))
+
+ggplot(borehole_user) +
+  geom_col(aes(
+    x = number_households,
+    y = reorder(village, number_households)
+  ),
+  fill = "lightgreen",  # Change the color here to light green
+  width = 0.8
+  ) +
+  geom_text(aes(
+    x = number_households,
+    y = reorder(village, number_households),
+    label = round(number_households)
+  ),
+  hjust = -0.5,
+  size = 8 / .pt
+  ) +
+  labs(
+    title = "Number of households using a borehole",
+    caption = "Boreholes distribution according to villages"
+    
+  ) +
+  scale_x_continuous(expand = expansion(c(0, 0.1))) +
+  theme_unhcr(
+    grid = FALSE,
+    axis = "y",
+    axis_title = FALSE,
+    axis_text = "y"
+  )
+# Provide some example code here
+```
+
+
+## License
+
+Data are available as
+[CC-BY](https://github.com/openwashdata/boreholefuncmwi/blob/main/LICENSE.md).
+
+## Citation
+
+Please cite this package using:
+
+```{r}
+citation("boreholefuncmwi")
+```
