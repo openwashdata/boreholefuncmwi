@@ -1,0 +1,109 @@
+id,date,role,committee_members,last_meeting_participants,annual_budget,village,number_households,tariff_costs_consider,tariff_frequency,tariff_amount,total_money,tariff_hh_number,distance_materials,service_provider,preventive_maintenance,functional_status
+1,2023-05-03,Area Mechanic,NA,NA,1000001,Mulyabweka,39,No tarrif system set,None,0,0,0,>20 km away,0,0,0
+2,2023-05-07,Community member,NA,NA,50000,Mlirasambo,48,No tarrif system set,None,0,0,0,>20 km away,0,0,0
+3,2023-05-08,Community member,NA,NA,50000,James,59,No tarrif system set,None,0,4000,0,>20 km away,1,0,0
+5,2023-05-08,Area Mechanic,10,NA,600000,Chewere,41,Maintenance costs,Per month,200,60000,11,0-20 km away,0,0,0
+6,2023-05-10,Chief/Village Headman,15,33,200000,Mulyabweka,74,Maintenance costs,Per month,200,15000,33,0-20 km away,1,1,0
+7,2023-05-10,Hand pump borehole committee chair,10,28,150000,Kaputamwera,54,Maintenance costs,When required for repairs,500,15000,0,>20 km away,0,0,0
+9,2023-05-10,Community member,NA,NA,60000,Kayuni,37,No tarrif system set,None,0,0,0,>20 km away,0,0,0
+10,2023-05-10,Head teacher / Teacher,15,37,60000,James,24,No tarrif system set,None,0,0,0,0-20 km away,1,0,1
+11,2023-05-10,Community member,15,NA,200000,Goerge,36,Affordability,Per month,200,0,0,0-20 km away,0,0,0
+12,2023-05-10,Chief/Village Headman,10,34,30000,Kayuni,21,Affordability,Per month,200,24000,21,0-20 km away,0,1,0
+14,2023-05-10,Community member,NA,NA,100000,Mzangunya,17,No tarrif system set,None,0,0,0,Within community,0,0,0
+16,2023-05-14,Hand pump borehole committee chair,15,54,150000,Mlirasambo,69,Maintenance costs,Per month,200,200000,65,Within community,1,1,1
+71,2023-05-03,Hand pump borehole committee member,10,20,15000,Mponela,40,Maintenance costs,Per month,200,10000,34,0-20 km away,1,1,1
+72,2023-05-03,Hand pump borehole committee chair,10,30,120000,Mponela,23,Maintenance costs,Per 2 months,500,60000,20,0-20 km away,1,1,0
+73,2023-05-03,Hand pump borehole committee member,10,NA,50000,Kachaka,36,Maintenance costs,Per quarter,2000,50000,30,0-20 km away,1,0,1
+77,2023-05-04,Hand pump borehole committee member,10,26,120000,Mwakanyamale,28,Maintenance costs,Per month,500,120000,25,0-20 km away,0,1,1
+78,2023-05-04,Hand pump borehole committee member,10,21,70000,Mwakanyamale,21,Affordability,Per month,200,60000,10,0-20 km away,0,0,0
+79,2023-05-04,Head teacher / Teacher,10,30,300000,Mwakanyamale,1320,Affordability,Per year,500,260000,1320,0-20 km away,0,0,1
+80,2023-05-04,Hand pump borehole committee chair,10,26,250000,Mwakanyamale,19,Affordability,Per 2 months,500,180000,18,0-20 km away,0,0,1
+81,2023-05-04,Hand pump borehole committee member,10,29,200000,Mwakanyamale,22,Affordability,Per 2 months,500,200000,19,0-20 km away,0,0,1
+82,2023-05-04,Hand pump borehole committee member,10,21,120000,Mwakanyamale,22,Maintenance costs,Per month,500,120000,20,0-20 km away,0,0,1
+83,2023-05-04,Hand pump borehole committee chair,10,24,150000,Mwakanyamale,15,Affordability,Per 2 months,500,140000,15,0-20 km away,0,0,1
+84,2023-05-04,Hand pump borehole committee chair,10,19,140000,Mwakanyamale,25,Affordability,Per month,300,70000,23,0-20 km away,0,0,1
+85,2023-05-04,Hand pump borehole committee member,NA,NA,NA,Mkakatavu,18,No tarrif system set,None,0,NA,0,0-20 km away,0,0,0
+86,2023-05-04,Hand pump borehole committee member,10,25,135000,Mungombwa,28,Affordability,When required for repairs,0,80000,24,0-20 km away,0,0,1
+87,2023-05-04,Hand pump borehole committee member,10,29,100000,Mungombwa,30,Affordability,Per month,200,90000,29,0-20 km away,0,1,1
+88,2023-05-04,Hand pump borehole committee member,10,25,150000,Mungombwa,30,Affordability,Per 2 months,300,100000,25,0-20 km away,0,0,1
+89,2023-05-05,Hand pump borehole committee member,10,24,130000,Mponela,23,Affordability,Per 2 months,500,130000,18,0-20 km away,0,1,0
+90,2023-05-05,Community member,NA,NA,7000,Mponela,18,No tarrif system set,None,0,7000,0,0-20 km away,0,0,0
+91,2023-05-05,Hand pump borehole committee chair,10,28,250000,Mponela,27,Affordability,Per quarter,500,250000,23,0-20 km away,0,1,1
+92,2023-05-05,Hand pump borehole committee member,10,19,200000,Kachaka,21,Affordability,Per 2 months,500,60000,10,0-20 km away,0,1,0
+93,2023-05-05,Hand pump borehole committee chair,10,25,140000,Mzangunya,35,Affordability,Per 2 months,0,140000,30,0-20 km away,0,0,0
+94,2023-05-06,Hand pump borehole committee chair,10,21,200000,Mtawale,35,Maintenance costs,When required for repairs,1000,170000,30,Within community,0,0,1
+95,2023-05-06,Hand pump borehole committee member,10,19,160000,Mtawale,30,Affordability,Per quarter,500,80000,28,Within community,0,0,1
+96,2023-05-06,Hand pump borehole committee chair,10,31,300000,Mtawale,45,Maintenance costs,Per year,1000,300000,37,Within community,0,0,1
+97,2023-05-06,Hand pump borehole committee member,5,NA,60000,Mkakatavu,17,Affordability,When required for repairs,300,50000,10,0-20 km away,0,0,0
+98,2023-05-06,Hand pump borehole committee member,NA,NA,10000,Bonje,10,No tarrif system set,None,0,8000,0,0-20 km away,0,0,0
+99,2023-05-06,Hand pump borehole committee member,10,24,250000,Mkakatavu,35,Affordability,Per quarter,500,145000,30,0-20 km away,0,0,1
+100,2023-05-06,Community member,NA,NA,35000,Mungombwa,12,No tarrif system set,None,0,30000,0,0-20 km away,0,0,1
+101,2023-05-06,Hand pump borehole committee chair,10,19,200000,Chimphinga,17,Affordability,Per 2 months,0,150000,15,0-20 km away,0,1,1
+102,2023-05-06,Hand pump borehole committee chair,10,22,300000,Bonje,27,Affordability,Per quarter,1000,250000,25,0-20 km away,0,1,1
+103,2023-05-06,Hand pump borehole committee member,10,23,200000,Bonje,34,Affordability,Per quarter,1000,140000,29,0-20 km away,0,1,1
+104,2023-05-06,Area Mechanic,10,25,200000,Bonje,50,Affordability,Per quarter,2000,140000,43,0-20 km away,0,1,1
+106,2023-05-06,Hand pump borehole committee member,10,23,250000,Bonje,28,Affordability,Per quarter,500,120000,23,0-20 km away,0,1,1
+107,2023-05-06,Hand pump borehole committee member,10,27,240000,Bonje,21,Affordability,Per year,1000,250000,18,0-20 km away,0,0,1
+108,2023-05-06,Hand pump borehole committee member,10,25,250000,Mtekela 2,29,Affordability,Per 2 months,500,250000,20,0-20 km away,0,1,1
+109,2023-05-06,Hand pump borehole committee member,10,26,150000,Bonje,28,Affordability,Per quarter,500,145000,18,0-20 km away,0,1,1
+110,2023-05-06,Hand pump borehole committee chair,10,19,230000,Bonje,29,Maintenance costs,Per 2 months,500,130000,22,0-20 km away,0,0,1
+111,2023-05-06,Head teacher / Teacher,10,31,135000,Bonje,1125,Affordability,Per year,500,130000,1009,0-20 km away,0,1,1
+112,2023-05-06,Hand pump borehole committee member,10,21,140000,Bonje,18,Affordability,When required for repairs,2000,130000,15,0-20 km away,0,1,1
+113,2023-05-06,Hand pump borehole committee chair,10,17,130000,Bonje,18,Maintenance costs,When required for repairs,1000,130000,15,0-20 km away,0,0,1
+114,2023-05-07,Hand pump borehole committee member,10,24,150000,Mponela,23,Affordability,Per quarter,500,130000,18,0-20 km away,0,1,1
+115,2023-05-13,Hand pump borehole committee chair,10,23,150000,Manganani,45,Affordability,Per 2 months,500,140000,39,0-20 km away,0,1,1
+116,2023-05-13,Hand pump borehole committee member,10,21,130000,Manganani,23,Maintenance costs,When required for repairs,1000,120000,20,0-20 km away,0,1,1
+117,2023-05-13,Head teacher / Teacher,10,29,370000,Manganani,1105,Affordability,Per year,500,350000,1100,0-20 km away,1,0,1
+118,2023-05-13,Hand pump borehole committee chair,10,NA,140000,Manganani,33,Affordability,Per 2 months,500,130000,29,0-20 km away,0,1,1
+119,2023-05-13,Hand pump borehole committee member,10,27,120000,Mtowerayifwa,32,Maintenance costs,When required for repairs,500,80000,28,0-20 km away,0,0,0
+120,2023-05-13,Hand pump borehole committee member,10,19,150000,Mtowerayifwa,31,Affordability,When required for repairs,500,140000,25,0-20 km away,0,0,1
+121,2023-05-13,Hand pump borehole committee chair,10,27,180000,Mtowerayifwa,29,Affordability,Per quarter,500,160000,20,0-20 km away,0,0,1
+122,2023-05-14,Hand pump borehole committee chair,10,29,0,Mtowerayifwa,34,No tarrif system set,None,0,0,0,Don't Know,0,0,1
+123,2023-05-14,Hand pump borehole committee chair,10,27,170000,Mlirasambo,85,Affordability,When required for repairs,500,150000,70,0-20 km away,0,1,1
+124,2023-05-14,Hand pump borehole committee chair,10,26,370000,Mlirasambo,50,Affordability,When required for repairs,2000,340000,40,0-20 km away,0,1,1
+125,2023-05-14,Head teacher / Teacher,10,28,500000,Mwakhwawa,842,Maintenance costs,Per year,500,450000,842,0-20 km away,0,1,1
+126,2023-05-14,Hand pump borehole committee chair,10,25,100000,Mwakhwawa,28,Affordability,Per 2 months,300,60000,19,0-20 km away,0,1,1
+127,2023-05-14,Hand pump borehole committee member,10,31,60000,Mwakhwawa,18,Affordability,Per 2 months,400,50000,15,0-20 km away,0,1,1
+128,2023-05-14,Hand pump borehole committee chair,10,31,160000,Mwakhwawa,26,Affordability,When required for repairs,600,145000,25,0-20 km away,0,0,1
+129,2023-05-14,Head teacher / Teacher,10,35,1330450,Mwakhwawa,450,Affordability,Per year,500,1220425,4508,0-20 km away,0,0,1
+130,2023-05-14,Hand pump borehole committee chair,10,26,350008,Mwakhwawa,35,Affordability,When required for repairs,2000,250000,30,0-20 km away,0,0,1
+131,2023-05-14,Hand pump borehole committee member,NA,NA,60000,Mwakhwawa,19,No tarrif system set,None,0,25008,0,0-20 km away,0,0,0
+132,2023-05-14,Hand pump borehole committee member,NA,NA,30000,Mwakhwawa,60,Maintenance costs,When required for repairs,500,20000,50,0-20 km away,0,0,1
+133,2023-05-14,Hand pump borehole committee member,10,24,250000,Malongo,30,Affordability,When required for repairs,600,160000,26,0-20 km away,0,1,1
+134,2023-05-14,HSA / Health officer,10,27,150000,Kaluli Chisiza,34,Maintenance costs,When required for repairs,600,140000,25,0-20 km away,0,1,1
+135,2023-05-14,Hand pump borehole committee member,10,19,160000,Chilawira,18,Maintenance costs,When required for repairs,0,140000,13,0-20 km away,0,1,1
+136,2023-05-14,Hand pump borehole owner,NA,NA,150000,Chilawira,13,No tarrif system set,None,0,100000,0,0-20 km away,0,0,0
+137,2023-05-14,Hand pump borehole committee member,10,28,150000,Chilawira,43,Maintenance costs,When required for repairs,0,120000,35,0-20 km away,0,0,1
+138,2023-05-14,Hand pump borehole committee member,10,24,150000,Chilawira,35,Maintenance costs,When required for repairs,500,130000,28,0-20 km away,0,0,1
+139,2023-05-14,Head teacher / Teacher,10,29,350000,Kaluli Chisiza,946,Affordability,Per quarter,500,250000,930,0-20 km away,0,1,1
+140,2023-05-21,Hand pump borehole committee chair,10,27,250000,Chambogho,21,Affordability,Per quarter,500,160000,19,Within community,0,0,1
+141,2023-05-21,Hand pump borehole committee member,10,29,250000,Chambogho,18,Affordability,When required for repairs,0,130000,16,Within community,0,1,1
+142,2023-05-21,Hand pump borehole committee member,10,25,260000,Chambogho,30,Affordability,When required for repairs,500,150000,25,Within community,0,0,0
+143,2023-05-21,Hand pump borehole committee chair,10,26,260000,Chambogho,30,Affordability,When required for repairs,500,130000,28,Within community,0,0,1
+144,2023-05-21,Head teacher / Teacher,10,34,450000,Chambogho,813,Affordability,When required for repairs,500,420000,790,Within community,0,0,1
+145,2023-05-21,Hand pump borehole committee chair,10,31,150000,Chambogho,29,Affordability,Per quarter,500,120000,27,Within community,0,1,1
+146,2023-05-21,Hand pump borehole committee member,10,15,120000,Chambogho,14,Affordability,When required for repairs,500,9000,12,Within community,0,1,1
+147,2023-05-21,Hand pump borehole committee chair,10,18,240000,Kachere,19,Affordability,When required for repairs,500,120000,17,Within community,0,0,1
+148,2023-05-21,Head teacher / Teacher,10,21,120000,Kachere,19,Affordability,Per year,1000,19000,17,Within community,0,0,1
+149,2023-05-21,Head teacher / Teacher,10,29,17000000,Kachere,328,Affordability,Per year,500,17000000,325,Within community,0,0,1
+150,2023-05-22,Hand pump borehole committee chair,10,27,250000,Manganani,50,Maintenance costs,When required for repairs,500,150000,46,0-20 km away,0,1,1
+151,2023-05-22,Hand pump borehole committee chair,10,23,150000,Mugabe,45,Affordability,When required for repairs,500,130000,40,0-20 km away,0,0,1
+152,2023-05-22,Hand pump borehole committee member,10,21,150000,Mugabe,20,Maintenance costs,When required for repairs,500,140000,18,0-20 km away,0,1,1
+153,2023-05-22,Hand pump borehole committee member,10,17,90000,Chimphinga,22,Maintenance costs,When required for repairs,0,75000,18,0-20 km away,0,0,1
+154,2023-05-22,Hand pump borehole committee member,10,27,200000,Chimphinga,24,Affordability,Per 2 months,0,150000,19,0-20 km away,0,1,1
+155,2023-05-22,Head teacher / Teacher,NA,NA,0,Chimphinga,825,No tarrif system set,None,0,0,0,0-20 km away,0,0,1
+156,2023-05-22,Hand pump borehole committee member,10,17,1200001,Chimphinga,25,Maintenance costs,When required for repairs,500,90000,19,0-20 km away,0,0,1
+157,2023-05-22,Hand pump borehole committee member,10,16,80000,Chimphinga,19,No tarrif system set,None,0,50000,15,0-20 km away,0,0,0
+158,2023-05-22,Hand pump borehole committee member,10,35,150008,Mugabe,55,Affordability,Per year,1000,120000,46,0-20 km away,0,0,1
+159,2023-05-22,Hand pump borehole committee member,10,18,140000,Mugabe,19,Affordability,Per year,2000,130000,17,0-20 km away,0,0,1
+160,2023-05-22,Hand pump borehole committee chair,10,18,80000,Mungombwa,15,Affordability,When required for repairs,500,60000,15,0-20 km away,0,0,1
+161,2023-05-22,Hand pump borehole committee chair,10,16,100000,Mungombwa,15,Affordability,When required for repairs,500,80000,12,0-20 km away,0,0,1
+162,2023-05-22,Hand pump borehole committee member,10,21,150000,Chizumba,25,Affordability,When required for repairs,500,130000,20,0-20 km away,0,1,1
+163,2023-05-22,Hand pump borehole committee member,NA,NA,125000,Chizumba,28,No tarrif system set,None,0,125000,0,0-20 km away,1,0,1
+164,2023-05-22,Hand pump borehole committee member,10,21,180000,Chizumba,24,Affordability,Per month,100,150000,19,0-20 km away,0,1,1
+165,2023-05-22,Hand pump borehole committee chair,10,21,200000,Wavikhazga,19,Affordability,When required for repairs,500,150000,17,Within community,0,1,1
+166,2023-05-22,Hand pump borehole committee chair,10,29,150000,Wavikhazga,21,Maintenance costs,When required for repairs,500,130000,17,Within community,0,0,1
+167,2023-05-22,Hand pump borehole committee member,10,28,160000,Chizumba,25,Affordability,Per year,1000,130000,20,Within community,0,1,1
+168,2023-05-23,Hand pump borehole committee chair,10,29,160000,Mponela,35,Affordability,Per year,1000,140000,30,0-20 km away,0,0,1
+169,2023-05-23,Hand pump borehole committee chair,10,35,15000000,Mponela,1591,Affordability,Per year,500,550000,1509,0-20 km away,0,0,1
+170,2023-05-23,Hand pump borehole committee member,10,26,140000,Mugoyera,35,Maintenance costs,When required for repairs,1000,130000,30,0-20 km away,0,1,1
