@@ -4,14 +4,21 @@ Version: 0.0.0.9000
 Authors@R: c(
     person("Juliette", "Preisig", , "preisigjuliette@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0005-3259-1858")),
-    person("Mabvuto", "Yesaya", role = "aut",comment = c(ORCID = "0000-0003-3234-9699"))
+    person("Mabvuto", "Yesaya", role = "aut",
+           comment = c(ORCID = "0000-0003-3234-9699")),
+    person("Mian", "Zhong", , "mzhong@ethz.ch", role = "aut",
+           comment = c(ORCID = "0009-0009-4546-7214"))
   )
-Description: The data is obtained from a survey conducted in Wasambo in Karonga district (Northen Malawi). This data is about boreholes and handpumps that people mostly rely on for drinking water, secondary to wells and rivers. The data were collected in June 2013.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: The data is obtained from a survey conducted in Wasambo in Karonga district (Northen Malawi). This data is about boreholes and handpumps that people mostly rely on for drinking water, secondary to wells and rivers. The data were collected in June 2023.
+License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Depends: 
     R (>= 2.10)
 LazyData: true
+Language: en-GB
+Config/Needs/website: rmarkdown
+Date: 2024-06-26
+URL: https://github.com/openwashdata/boreholefuncmwi
+BugReports: https://github.com/openwashdata/boreholefuncmwi/issues
