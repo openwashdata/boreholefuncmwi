@@ -31,7 +31,8 @@ knitr::opts_chunk$set(
 
 <!-- badges: end -->
 
-The goal of boreholefuncmwi is to ...
+The goal of `boreholefuncmwi` is to provide access to data which were collected in the Karonga district (North of Malawi) and contains answers from a 20-minute questionnaire about boreholes. The questionnaire was installed on [koboToolbox](www.kobotoolbox.org) to collect borehole functionality data from 300 respondents aged 18 and above.
+
 
 ## Installation
 
@@ -74,9 +75,6 @@ read_csv("data-raw/dictionary.csv") |>
 ```
 
 ## Data
-
-The package provides access to data which were collected in the Karonga district (North of Malawi) and contains answers from a 20-minute questionnaire about boreholes. The questionnaire was installed on koboTooolbox (www.kobotoolbox.org) to collect borehole functionality data from 300 respondents aged 18 and above.
-
 
 ```{r}
 library(boreholefuncmwi)
@@ -146,6 +144,9 @@ ggplot(borehole_user) +
   )
 # Provide some example code here
 ```
+
+## Capstone Project
+This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at 
 
 
 ## License
