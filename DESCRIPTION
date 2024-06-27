@@ -1,6 +1,6 @@
 Package: boreholefuncmwi
 Title: Analysis of boreholes' functionality in Northern Malawi
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: c(
     person("Juliette", "Preisig", , "preisigjuliette@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "0009-0005-3259-1858")),
@@ -20,6 +20,6 @@ Depends:
 LazyData: true
 Language: en-GB
 Config/Needs/website: rmarkdown
-Date: 2024-06-26
+Date: 2024-06-27
 URL: https://github.com/openwashdata/boreholefuncmwi
 BugReports: https://github.com/openwashdata/boreholefuncmwi/issues

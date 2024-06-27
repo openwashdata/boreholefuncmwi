@@ -28,7 +28,7 @@ knitr::opts_chunk$set(
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgreen.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/boreholefuncmwi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/boreholefuncmwi/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `boreholefuncmwi` is to provide access to data which were collected in the Karonga district (North of Malawi) and contains answers from a 20-minute questionnaire about boreholes. The questionnaire was installed on [koboToolbox](www.kobotoolbox.org) to collect borehole functionality data from 300 respondents aged 18 and above.

@@ -7,7 +7,7 @@
 
 [![License: CC BY
 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgreen.svg)](https://creativecommons.org/licenses/by/4.0/)
-
+[![R-CMD-check](https://github.com/openwashdata/boreholefuncmwi/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/openwashdata/boreholefuncmwi/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `boreholefuncmwi` is to provide access to data which were
@@ -66,7 +66,7 @@ boreholefuncmwi |>
   gt::as_raw_html()
 ```
 
-<div id="gwwpnpaqga" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="bgdknaiqng" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
   &#10;  <table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false" style="-webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3;" bgcolor="#FFFFFF">
   <thead style="border-style: none;">
     <tr class="gt_col_headings" style="border-style: none; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3;">
@@ -192,14 +192,14 @@ Date the survey was filled out
 role
 </td>
 <td style="text-align:left;">
-character
+categorical
 </td>
 <td style="text-align:left;">
-Main role of the respondent including Area Mechanic, Chief/Village
-Headman, Community member, Councilor, Head teacher/Teacher, HSA/Health
-officer, Hand pump borehole committee chair, Hand pump borehole
-committee member, Hand pump borehole owner, Water Seller, and Water User
-Association/Water Board member
+Main role of the respondent. Options include ‘Area Mechanic’,
+‘Chief/Village Headman’, ‘Community member’, ‘Councilor’, ‘Head
+teacher/Teacher’, ‘HSA/Health officer’, ‘Hand pump borehole committee
+chair’, ‘Hand pump borehole committee member’, ‘Hand pump borehole
+owner’, ‘Water Seller’, and ‘Water User Association/Water Board member’
 </td>
 </tr>
 <tr>
@@ -210,7 +210,7 @@ committee_members
 integer
 </td>
 <td style="text-align:left;">
-How many people are on the Hand pump borehole Committee?
+How many people are on the Hand pump borehole Committee as of 2023?
 </td>
 </tr>
 <tr>
@@ -222,7 +222,7 @@ integer
 </td>
 <td style="text-align:left;">
 How many community members attended the last meeting? (Label 99 for
-unknown)
+unknown number of attendants)
 </td>
 </tr>
 <tr>
@@ -233,8 +233,8 @@ annual_budget
 integer
 </td>
 <td style="text-align:left;">
-How much money do you need to manage this borehole without financial
-problems annually?
+How much money in Malawi Kwacha do you need to manage this borehole
+without financial problems annually?
 </td>
 </tr>
 <tr>
@@ -267,7 +267,10 @@ tariff_costs_consider
 categorical
 </td>
 <td style="text-align:left;">
-What costs were considered when setting the tariff or user fee?
+What costs were considered when setting the tariff or user fee? Options
+including Maintenance costs, Operation costs - e.g. salary of the water
+seller, Total replacement cost for the system, Set by local government,
+and Bill payments.
 </td>
 </tr>
 <tr>
@@ -301,7 +304,8 @@ total_money
 integer
 </td>
 <td style="text-align:left;">
-How much do you source to support operations and maintenance annually?
+How much money in Malawi Kwacha do you source to support operations and
+maintenance annually?
 </td>
 </tr>
 <tr>
@@ -325,8 +329,8 @@ categorical
 </td>
 <td style="text-align:left;">
 How far away are/were the materials you use for hand pump borehole
-repairs? Options including \>20km, 0-20km, within community, and don’t
-know.
+repairs? Options include ‘\>20km’, ‘0-20km’, ‘within community’, and
+‘don’t know’.
 </td>
 </tr>
 <tr>
@@ -350,7 +354,7 @@ preventive_maintenance
 categorical
 </td>
 <td style="text-align:left;">
-Do you conduct preventive maintenance?
+Do you conduct preventive maintenance? Yes for 1 and No for 0.
 </td>
 </tr>
 <tr>
@@ -361,7 +365,9 @@ functional_status
 categorical
 </td>
 <td style="text-align:left;">
-Functional status of the borehole
+Functional status of the borehole. Functional for 1, Not functional for
+0 (including ‘Partially functional but in need of repair’, ‘Not
+functional’)
 </td>
 </tr>
 </tbody>
@@ -442,8 +448,7 @@ citation("boreholefuncmwi")
 #> 
 #>   Preisig J, Yesaya M, Zhong M, Kayira H (2024). _boreholefuncmwi:
 #>   Analysis of boreholes' functionality in Northern Malawi_. R package
-#>   version 0.0.0.9000,
-#>   <https://github.com/openwashdata/boreholefuncmwi>.
+#>   version 0.0.1, <https://github.com/openwashdata/boreholefuncmwi>.
 #> 
 #> A BibTeX entry for LaTeX users is
 #> 
@@ -451,7 +456,7 @@ citation("boreholefuncmwi")
 #>     title = {boreholefuncmwi: Analysis of boreholes' functionality in Northern Malawi},
 #>     author = {Juliette Preisig and Mabvuto Yesaya and Mian Zhong and Hastings Kayira},
 #>     year = {2024},
-#>     note = {R package version 0.0.0.9000},
+#>     note = {R package version 0.0.1},
 #>     url = {https://github.com/openwashdata/boreholefuncmwi},
 #>   }
 ```

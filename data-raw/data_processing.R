@@ -2,25 +2,27 @@
 # R script to process uploaded raw data into a tidy, analysis-ready data frame
 # Load packages ----------------------------------------------------------------
 ## Run the following code in console if you don't have the packages
-## install.packages(c("usethis", "fs", "here", "readr", "openxlsx"))
+## install.packages(c("usethis", "fs", "here", "readr", "openxlsx", "dplyr", "janitor", "tidyr"))
 library(usethis)
 library(fs)
 library(here)
 library(readr)
 library(openxlsx)
-
+library(dplyr)
+library(janitor)
+library(tidyr)
 # Read data --------------------------------------------------------------------
 borehole_malawi <- read_csv2("data-raw/dataset.csv")
 
 # Tidy data --------------------------------------------------------------------
 
-# add id numbers
+## Add ID numbers --------------------------------------------------------------
 borehole_malawi <- borehole_malawi |>
   mutate(id = seq(1:n())) |>
   relocate(id)
 
 
-# rename columns
+# Rename columns from survey question to short variable name -------------------
 borehole_malawi<-borehole_malawi |>
   rename(date = today,
          committee_members = `How many people are on the Hand pump borehole Committee?`,
@@ -42,7 +44,7 @@ borehole_malawi<-borehole_malawi |>
          role="Main role of the respondent")
 
 
-# create a smaller dataset with 17 important variables
+## Filter data with 17 important variables --------------------------------------
 borehole_malawi_small <- borehole_malawi |>
   select(id,
          date,
@@ -67,13 +69,13 @@ borehole_malawi_small <- borehole_malawi |>
          functional_status)
 
 
-# Remove the entries where the borehole no longer exists or abandoned
+## Remove the entries where the borehole no longer exists or abandoned ---------
 borehole_malawi_small<-borehole_malawi_small |>
   clean_names() |>
   filter(functional_status != 'No longer exists or abandoned')
 
 
-# Recode functionality column
+# Recode functionality column --------------------------------------------------
 borehole_malawi_small<-borehole_malawi_small |>
   mutate(
       functional_status = case_when(
@@ -84,7 +86,7 @@ borehole_malawi_small<-borehole_malawi_small |>
   )
 
 
-# Simplify entry of distance_materials variable
+## Simplify entry of distance_materials variable -------------------------------
 borehole_malawi_small <- borehole_malawi_small %>%
   mutate(
     distance_materials = case_when(
@@ -94,13 +96,11 @@ borehole_malawi_small <- borehole_malawi_small %>%
   )
 
 
-# Remove the records where village name is missing or Nb
-borehole_malawi_small <- borehole_malawi_small %>%
-  filter(!is.na(village) & village != "Nb")
-
-
-# Recode village names
-borehole_malawi_small <- borehole_malawi_small %>%
+## Modify village names --------------------------------------------------------
+borehole_malawi_small <- borehole_malawi_small |>
+  # Remove the records where village name is missing or Nb
+  filter(!is.na(village) & village != "Nb") |>
+  # Recode village names
   mutate(
     village = case_when(
       village == "Mlirasaambo" ~ "Mlirasambo",
@@ -112,7 +112,7 @@ borehole_malawi_small <- borehole_malawi_small %>%
   )
 
 
-# Recode the variable tariff_costs_consider
+# Recode the variable tariff_costs_consider ------------------------------------
 borehole_malawi_small <- borehole_malawi_small %>%
   mutate(
     tariff_costs_consider = case_when(
@@ -145,7 +145,7 @@ modify <- function(dataset) {
 borehole_malawi_small$tariff_amount <- modify(borehole_malawi_small$tariff_amount)
 
 
-#replace NAs in columns tariff_hh_number, tariff_amount, preventive_maintenance, tariff_frequency and tariff_costs_consider
+# Replace NAs in columns tariff_hh_number, tariff_amount, preventive_maintenance, tariff_frequency and tariff_costs_consider
 borehole_malawi_small <- borehole_malawi_small |>
   mutate(tariff_hh_number = replace_na(tariff_hh_number, 0)) |>
   # same for tarrif amount
@@ -163,13 +163,13 @@ borehole_malawi_small <- borehole_malawi_small |>
 borehole_malawi_small <- borehole_malawi_small %>%
   mutate_at(vars(service_provider:functional_status), ~ifelse(. == "Yes", 1, 0))
 
-#convert categorical variables to factors
+# Convert categorical variables to factors
 borehole_malawi_small |>
-  mutate(across(c(village, tariff_costs_consider, tariff_frequency,
+  mutate(across(c(role, village, tariff_costs_consider, tariff_frequency,
                   distance_materials, service_provider, preventive_maintenance,
                   functional_status), as.factor))
 
-#save final dataset
+# Save final dataset
 boreholefuncmwi <- borehole_malawi_small
 
 # Export Data ------------------------------------------------------------------
