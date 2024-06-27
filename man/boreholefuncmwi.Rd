@@ -5,7 +5,7 @@
 \alias{boreholefuncmwi}
 \title{boreholefuncmwi: Analysis of boreholes' functionality in Northern Malawi}
 \format{
-A tibble with 6 rows and 17 variables
+A tibble with 108 rows and 17 variables
 \describe{
 \item{id}{Identification number of the observation}
 \item{date}{Date the survey was filled out}

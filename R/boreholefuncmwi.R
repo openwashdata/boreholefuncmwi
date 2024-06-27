@@ -2,7 +2,7 @@
 #'
 #' The data is obtained from a survey conducted in Wasambo in Karonga district (Northen Malawi). This data is about boreholes and handpumps that people mostly rely on for drinking water, secondary to wells and rivers. The data were collected in June 2013.
 #'
-#' @format A tibble with 6 rows and 17 variables
+#' @format A tibble with 108 rows and 17 variables
 #' \describe{
 #'   \item{id}{Identification number of the observation}
 #'   \item{date}{Date the survey was filled out}

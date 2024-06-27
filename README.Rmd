@@ -146,7 +146,7 @@ ggplot(borehole_user) +
 ```
 
 ## Capstone Project
-This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at 
+This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at https://ds4owd-001.github.io/project-myesaya/
 
 
 ## License

@@ -7,7 +7,8 @@ Authors@R: c(
     person("Mabvuto", "Yesaya", role = "aut",
            comment = c(ORCID = "0000-0003-3234-9699")),
     person("Mian", "Zhong", , "mzhong@ethz.ch", role = "aut",
-           comment = c(ORCID = "0009-0009-4546-7214"))
+           comment = c(ORCID = "0009-0009-4546-7214")),
+    person("Hastings", "Kayira", , "hastingskayira95@gmail.com", role = "aut")
   )
 Description: The data is obtained from a survey conducted in Wasambo in Karonga district (Northen Malawi). This data is about boreholes and handpumps that people mostly rely on for drinking water, secondary to wells and rivers. The data were collected in June 2023.
 License: CC BY 4.0
