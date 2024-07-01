@@ -1,4 +1,4 @@
-# Description ------------------------------------------------------------------
+ # Description ------------------------------------------------------------------
 # R script to process uploaded raw data into a tidy, analysis-ready data frame
 # Load packages ----------------------------------------------------------------
 ## Run the following code in console if you don't have the packages

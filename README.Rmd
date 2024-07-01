@@ -33,7 +33,6 @@ knitr::opts_chunk$set(
 
 The goal of `boreholefuncmwi` is to provide access to data which were collected in the Karonga district (North of Malawi) and contains answers from a 20-minute questionnaire about boreholes. The questionnaire was installed on [koboToolbox](www.kobotoolbox.org) to collect borehole functionality data from 300 respondents aged 18 and above.
 
-
 ## Installation
 
 You can install the development version of boreholefuncmwi from
@@ -105,7 +104,9 @@ readr::read_csv("data-raw/dictionary.csv") |>
 
 
 ## Example
+
 It can be interesting to analyse the numbers of households who draw water from a borehole in each village. Here is a plot showing the distribution of boreholes' use across villages.
+
 ```{r}
 library(boreholefuncmwi)
 library(unhcrthemes)
@@ -146,8 +147,8 @@ ggplot(borehole_user) +
 ```
 
 ## Capstone Project
-This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at https://ds4owd-001.github.io/project-myesaya/
 
+This dataset is shared as part of a capstone project in [Data Science for openwashdata](https://ds4owd-001.github.io/website/). For more information about the project and to explore further insights, please visit the project page at <https://ds4owd-001.github.io/project-myesaya/>
 
 ## License
 
