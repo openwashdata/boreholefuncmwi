@@ -143,7 +143,6 @@ ggplot(borehole_user) +
     axis_title = FALSE,
     axis_text = "y"
   )
-# Provide some example code here
 ```
 
 ## Capstone Project
