@@ -2,7 +2,7 @@ pandoc: 3.8.3
 pkgdown: 2.2.1
 pkgdown_sha: ~
 articles: {}
-last_built: 2026-10-29T15:21Z
+last_built: 2026-10-31T20:39Z
 urls:
-  reference: https://github.com/openwashdata/boreholefuncmwi/reference
-  article: https://github.com/openwashdata/boreholefuncmwi/articles
+  reference: https://openwashdata.github.io/boreholefuncmwi/reference
+  article: https://openwashdata.github.io/boreholefuncmwi/articles

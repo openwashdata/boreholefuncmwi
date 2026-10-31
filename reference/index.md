@@ -2,6 +2,6 @@
 
 ## All functions
 
-- [`boreholefuncmwi`](https://github.com/openwashdata/boreholefuncmwi/reference/boreholefuncmwi.md)
+- [`boreholefuncmwi`](https://openwashdata.github.io/boreholefuncmwi/reference/boreholefuncmwi.md)
   : boreholefuncmwi: Analysis of boreholes' functionality in Northern
   Malawi
