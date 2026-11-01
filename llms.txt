@@ -1,7 +1,5 @@
 # boreholefuncmwi
 
-A data package published by [openwashdata](https://openwashdata.org).
-
 The goal of `boreholefuncmwi` is to provide access to data which were
 collected in the Karonga district (North of Malawi) and contains answers
 from a 20-minute questionnaire about boreholes. The questionnaire was
@@ -153,6 +151,8 @@ Data are available as
 [CC-BY](https://github.com/openwashdata/boreholefuncmwi/blob/main/LICENSE.md).
 
 ## Citation
+
+Published by openwashdata, <https://openwashdata.org>.
 
 Please cite this package using:
 
